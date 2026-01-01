@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang = "en"> 
+    <head>
+        <meta charset = "UTF-8">
+        <title>Light bulb</title>
+
+        <style>
+            img{
+                width: 300px;
+                height: auto;
+                display: block;
+                margin-bottom: 10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <img id="lightBulb" src = "" alt="a light bulb">
+        <button onclick=""changeImage()">Click ME</button>"
+        
+        <script>
+            let isImageOne = true;
+
+            function changeImage() {
+                const image = document.getElementById("lightBulb");
+
+                if(isImageOne) {
+                    image.src = "image2.jpg";
+                }else{
+                    img.src = "image1.jpg";
+                }
+                isImageOne = !isImageOne;
+            }
+        </script>
+        
+    </body>
+</html>
